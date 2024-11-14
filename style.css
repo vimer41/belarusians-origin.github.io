@@ -1,0 +1,241 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 18px; /* Увеличенный базовый размер шрифта */
+}
+
+/* Заголовок и кнопка */
+header {
+    text-align: center;
+    padding: 60px;
+    background: #8c7b75;
+    color: white;
+}
+
+header h1 {
+    font-size: 36px; /* Увеличенный заголовок */
+}
+
+header p {
+    font-size: 20px; /* Увеличенный текст описания */
+}
+
+.button {
+    padding: 12px 24px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Секция гипотез */
+#hypotheses {
+    text-align: center;
+    padding: 30px;
+    background-color: #fafafa;
+}
+
+#hypotheses h2 {
+    font-size: 32px; /* Заголовок раздела гипотез */
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Расстояние между карточками */
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px; /* Увеличенный размер карточек */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 24px; /* Увеличенный заголовок гипотезы */
+    margin-top: 0;
+}
+
+.card p {
+    font-size: 18px; /* Увеличенный текст описания гипотезы */
+}
+
+.card button {
+    font-size: 18px;
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #8c7b75;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Модальные окна */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.popup-content {
+    background: white;
+    width: 80%;
+    max-width: 600px;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.popup-content h3 {
+    font-size: 28px; /* Увеличенный заголовок модального окна */
+}
+
+.popup-content p {
+    font-size: 20px; /* Увеличенный текст модального окна */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Главная секция */
+header {
+    text-align: center;
+    padding: 60px;
+    background: #8c7b75;
+    color: white;
+}
+
+header .header-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+header .header-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.header-content .button {
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.header-content .button:hover {
+    background-color: #555;
+}
+
+/* Раздел "О проекте" */
+#intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #fafafa;
+    margin-bottom: 40px;
+}
+
+#intro .intro-text {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.project-description {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #555;
+    text-align: justify;
+}
+
+
+.intro-img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Раздел с историческими фактами */
+#history {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#history h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #8c7b75;
+}
+
+.fact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.fact-card {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fact-card h3 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.fact-card p {
+    font-size: 18px;
+}
+
+/* Подвал сайта */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
