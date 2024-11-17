@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Происхождение белорусов</title>
     <link rel="stylesheet" href="style.css">
-</head>
+
+    <meta name="description" content="Проект, посвященный исследованию происхождения белорусов: балтская, славянская и кривичская гипотезы.">
+    <meta name="keywords" content="история белорусов, происхождение, гипотезы, балты, славяне, кривичи">
+    <meta name="author" content="Ваше имя">
+    </head>
+    
 <body>
     <!-- Главная секция -->
     <header>
@@ -50,6 +55,18 @@
         <p>&copy; 2024 История происхождения белорусов. Все права защищены.</p>
     </footer>
 
-</body>
+
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const href = e.target.getAttribute('href');
+                document.body.style.opacity = 0;
+                setTimeout(() => window.location.href = href, 300);
+            });
+        });
+    </script>
+    </body>
+    
 <script src="script.js"></script>
 </html>
