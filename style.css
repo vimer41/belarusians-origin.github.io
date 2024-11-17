@@ -131,6 +131,84 @@ body {
     color: #333;
     font-size: 18px;
 }
+/* Раздел "Авторы проекта" */
+#authors {
+    padding: 60px 20px;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+#authors h2 {
+    font-size: 36px;
+    color: #6d5b4f;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* Контейнер для карточек авторов */
+.authors-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Карточки авторов */
+.author-card {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.author-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.author-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.author-card h3 {
+    font-size: 24px;
+    color: #6d5b4f;
+    margin-bottom: 10px;
+}
+
+.author-card p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Адаптивные стили для карточек авторов */
+@media (max-width: 1024px) {
+    .authors-container {
+        gap: 20px;
+    }
+
+    .author-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .authors-container {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .author-card {
+        width: 100%;
+    }
+}
 
 /* Главная секция */
 header {
