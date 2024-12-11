@@ -3,94 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Происхождение белорусов</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Проект: Происхождение белорусов</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Общие стили */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
 
-    <meta name="description" content="Проект, посвященный исследованию происхождения белорусов: балтская, славянская и кривичская гипотезы.">
-    <meta name="keywords" content="история белорусов, происхождение, гипотезы, балты, славяне, кривичи">
-    <meta name="author" content="Ваше имя">
-    </head>
-    
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4b79a1;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Заголовок */
+        header {
+            background: linear-gradient(to right, #4b79a1, #283e51);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: whitesmoke;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 0 0 20px;
+        }
+
+        header .button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #ffffff;
+            color: #4b79a1;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        header .button:hover {
+            background-color: #e3e3e3;
+        }
+
+        /* Секция "О проекте" */
+        #about {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        #about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        #about p {
+            font-size: 1.2rem;
+            max-width: 900px;
+            margin: 0 auto 30px;
+            text-align: justify;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        #about p:last-child {
+            margin-bottom: 0;
+        }
+
+        .about-highlight {
+            font-weight: bold;
+            color: #283e51;
+        }
+
+        /* Секция "Авторы проекта" */
+        #authors {
+            padding: 60px 20px;
+            background-color: #f7f7f7;
+            text-align: center;
+        }
+
+        #authors h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .authors-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .author-card {
+            background-color: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .author-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .author-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .author-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .author-card p {
+            font-size: 1rem;
+        }
+
+        /* Подвал */
+        footer {
+            background-color: #283e51;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
 <body>
-    <!-- Главная секция -->
-    <header>
-        <div class="header-content">
-            <h1>Основные гипотезы происхождения белорусов</h1>
-            <p>Исследуйте исторические гипотезы, которые объясняют происхождение белорусского народа. На основе археологических данных и древних текстов.</p>
-            <a href="hypotheses.html" class="button">Узнать гипотезы</a>
-        </div>
-    </header>
 
-    <!-- Раздел с информацией -->
-    <section id="intro">
-        <div class="intro-text">
-            <h2>О проекте</h2>
-            <p>Наш проект посвящен изучению происхождения белорусов. На протяжении веков существует несколько гипотез, основанных на разных исторических фактах и исследованиях. В этой статье мы рассмотрим три основных гипотезы: балтскую, славянскую и кривичскую.</p>
-        </div>
+<header>
+    <h1>Проект: Основные гипотезы происхождения белорусов</h1>
+    <p>Исследование исторических концепций этногенеза белорусского народа</p>
+    <a href="hypotheses.html" class="button">Перейти к гипотезам</a>
+</header>
 
-    </section>
-    <!-- Раздел "Авторы проекта" -->
+<section id="about">
+    <h2>О проекте</h2>
+    <p>
+        Проект «<span class="about-highlight">Основные гипотезы происхождения белорусов</span>» представляет собой глубокое изучение 
+        исторических теорий этногенеза белорусского народа. Мы исследуем такие ключевые концепции, как 
+        <span class="about-highlight">славянская гипотеза</span>, <span class="about-highlight">балтская теория</span> и их сочетания, уделяя внимание влиянию 
+        исторических, географических и культурных факторов на формирование этнической идентичности.
+    </p>
+    <p>
+        Основная цель проекта — сделать сложные исторические темы доступными и интересными для широкой аудитории, включая студентов, преподавателей и всех, кто интересуется 
+        историей Беларуси. Все материалы проверены и подкреплены ссылками на авторитетные источники.
+    </p>
+</section>
+
 <section id="authors">
     <h2>Авторы проекта</h2>
     <div class="authors-container">
-        <!-- Карточка первого автора -->
-        <div class="author-card">
-            <img src="img/avtor.jpg" alt="Фото автора 1">
-            <h3>Николай Боровиков</h3>
-            <p>Крутой и простой парень</p>
+        <div class="author-card"> 
+            <h3>Алескин Владислав</h3>
         </div>
-        <!-- Карточка второго автора -->
         <div class="author-card">
-            <img src="img/avtor.jpg" alt="Фото автора 2">
-            <h3>Николай Боровиков</h3>
-            <p>Крутой и простой парень</p>
+            <h3>Чернышёв Захар</h3>
         </div>
-        <!-- Карточка третьего автора -->
         <div class="author-card">
-            <img src="img/avtor.jpg" alt="Фото автора 3">
-            <h3>Николай Боровиков</h3>
-            <p>Крутой и простой парень</p>
+            <h3>Назарова Вероника</h3>
+        </div>
+        <div class="author-card">
+            <h3>Климентьев Павел</h3>
+        </div>
+        <div class="author-card">
+            <h3>Чердаклиев Антон</h3>
         </div>
     </div>
 </section>
 
-    <!-- Раздел с историческими фактами -->
-    <section id="history">
-        <h2>Исторические факты</h2>
-        <p>Белорусы имеют богатую историю, которая охватывает тысячи лет. Различные археологические находки и письменные источники помогают создавать гипотезы о происхождении этого народа.</p>
-        <div class="fact-cards">
-            <div class="fact-card">
-                <h3>Древние поселения</h3>
-                <p>Исследования древних поселений на территории Беларуси показывают влияние разных культур.</p>
-            </div>
-            <div class="fact-card">
-                <h3>Письменные источники</h3>
-                <p>Ранние летописи и письменные источники играют важную роль в изучении происхождения белорусов.</p>
-            </div>
-            <div class="fact-card">
-                <h3>Археологические находки</h3>
-                <p>Множество археологических находок подтверждают существование различных народов на территории Беларуси.</p>
-            </div>
-        </div>
-    </section>
+<footer>
+    <p>&copy; 2024 Полоцкий государственный университет имени Ефросинии Полоцкой.</p>
+    <p>Проект по истории</p>
+</footer>
 
-    <!-- Подвал сайта -->
-    <footer>
-        <p>&copy; 2024 История происхождения белорусов. Все права защищены.</p>
-    </footer>
-
-
-    <script>
-        document.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', e => {
-                e.preventDefault();
-                const href = e.target.getAttribute('href');
-                document.body.style.opacity = 0;
-                setTimeout(() => window.location.href = href, 300);
-            });
-        });
-    </script>
-    </body>
-    
-<script src="script.js"></script>
+</body>
 </html>
