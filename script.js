@@ -12,6 +12,7 @@ function togglePopup(hypothesis) {
         }, 10); // Небольшая задержка для плавного появления
     }
 }
+
 // Убедитесь, что элементы начально скрыты
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.popup').forEach(popup => {
