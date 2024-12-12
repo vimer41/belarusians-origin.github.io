@@ -5,158 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Проект: Происхождение белорусов</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        /* Общие стили */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Roboto', sans-serif;
-            background-color: #cecece;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-
-        a {
-            text-decoration: none;
-            color: #4b79a1;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Заголовок */
-        header {
-            background: linear-gradient(to right, #4b79a1, #283e51);
-            color: white;
-            padding: 100px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            color: whitesmoke;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            margin: 0 0 20px;
-        }
-
-        header .button {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: #ffffff;
-            color: #4b79a1;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        header .button:hover {
-            background-color: #e3e3e3;
-        }
-
-        /* Секция "О проекте" */
-        #about {
-            padding: 80px 20px;
-            text-align: center;
-            background-color: #cecece;
-        }
-
-        #about h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            color: #2c3e50;
-        }
-
-        #about p {
-            font-size: 1.2rem;
-            max-width: 900px;
-            margin: 0 auto 30px;
-            text-align: justify;
-            color: #444;
-            line-height: 1.8;
-        }
-
-        #about p:last-child {
-            margin-bottom: 0;
-        }
-
-        .about-highlight {
-            font-weight: bold;
-            color: #283e51;
-        }
-
-        /* Секция "Авторы проекта" */
-        #authors {
-            padding: 60px 20px;
-            background-color: #cecece;
-            text-align: center;
-        }
-
-        #authors h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-        }
-
-        .authors-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .author-card {
-            background-color: white;
-            width: 300px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .author-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .author-card img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
-
-        .author-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-
-        .author-card p {
-            font-size: 1rem;
-        }
-
-        /* Подвал */
-        footer {
-            background-color: #283e51;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        footer p {
-            margin: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -164,6 +13,17 @@
     <h1>Проект: Основные гипотезы происхождения белорусов</h1>
     <p>Исследование исторических концепций этногенеза белорусского народа</p>
     <a href="hypotheses.html" class="button">Перейти к гипотезам</a>
+    <details>
+        <summary></summary>
+        <nav class="menu">
+            <a href="#about">О проекте</a>
+            <a href="#historical-facts">Исторические факты</a>
+            <a href="#authors">Авторы</a>
+            <a href="#link">Контакты</a>
+            <a href="#link">About</a>
+        </nav>
+    </details>
+    
 </header>
 
 <section id="about">
@@ -178,6 +38,21 @@
         Основная цель проекта — сделать сложные исторические темы доступными и интересными для широкой аудитории, включая студентов, преподавателей и всех, кто интересуется 
         историей Беларуси. Все материалы проверены и подкреплены ссылками на авторитетные источники.
     </p>
+</section>
+
+<section id="historical-facts">
+    <h2>Исторические факты</h2>
+    <div>
+        <p>
+            <span>1. Первое письменное упоминание:</span> Древняя летопись, известная как "Повесть временных лет", упоминает о полочанах, предках современных белорусов, ещё в IX веке.
+        </p>
+        <p>
+            <span>2. Политическое объединение:</span> В конце XIII века, под властью великого князя Витеня, Полоцкое княжество стало частью Великого княжества Литовского, сыграв важную роль в его становлении.
+        </p>
+        <p>
+            <span>3. Культурное наследие:</span> Белорусский язык, культура и традиции формировались под влиянием как восточных, так и западных культур, создавая уникальное этнокультурное наследие.
+        </p>
+    </div>
 </section>
 
 <section id="authors">
@@ -206,5 +81,6 @@
     <p>Проект по истории</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
