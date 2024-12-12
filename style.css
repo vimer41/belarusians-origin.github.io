@@ -1,359 +1,274 @@
-/* Основные стили */
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #cecece;
+    color: #333;
+    line-height: 1.6;
+}
 
+h1, h2, h3 {
+    color: #2c3e50;
+}
 
-/* Заголовок и кнопка */
+a {
+    text-decoration: none;
+    color: #4b79a1;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Заголовок */
 header {
-    text-align: center;
-    padding: 60px;
-    background: #8c7b75;
+    background: linear-gradient(to right, #4b79a1, #283e51);
     color: white;
+    padding: 100px 20px;
+    text-align: center;
 }
 
 header h1 {
-    font-size: 36px; /* Увеличенный заголовок */
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: whitesmoke;
 }
 
 header p {
-    font-size: 20px; /* Увеличенный текст описания */
+    font-size: 1.2rem;
+    margin: 0 0 20px;
 }
 
-.button {
-    padding: 12px 24px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
+header .button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ffffff;
+    color: #4b79a1;
     border-radius: 5px;
-    font-size: 18px;
-}
-/* Таймлайн */
-#timeline {
-    padding: 40px;
-    background-color: #f9f9f9;
-}
-
-.timeline-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.timeline-event {
-    width: 80%;
-    background-color: white;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.timeline-event::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    width: 8px;
-    height: 8px;
-    background-color: #8c7b75;
-    border-radius: 50%;
-    top: -10px;
-    transform: translateX(-50%);
-}
-
-/* Секция гипотез */
-#hypotheses {
-    text-align: center;
-    padding: 30px;
-    background-color: #fafafa;
-}
-
-#hypotheses h2 {
-    font-size: 32px; /* Заголовок раздела гипотез */
-}
-
-.card-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px; /* Расстояние между карточками */
-    flex-wrap: wrap;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    padding: 20px;
-    text-align: center;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.card h3 {
-    font-size: 24px; /* Увеличенный заголовок гипотезы */
-    margin-top: 0;
-}
-
-.card p {
-    font-size: 18px; /* Увеличенный текст описания гипотезы */
-}
-
-.card button {
-    font-size: 18px;
-    padding: 8px 16px;
-    margin-top: 10px;
-    background-color: #8c7b75;
-    color: white;
-    border: none;
-    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
     cursor: pointer;
-    margin-top: auto;
+    transition: background-color 0.3s;
 }
 
-/* Модальные окна */
-.popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+header .button:hover {
+    background-color: #e3e3e3;
 }
 
-.popup-content {
-    background: white;
-    width: 80%;
-    max-width: 600px;
-    margin: 10% auto;
-    padding: 30px;
-    border-radius: 10px;
-    position: relative;
+/* Секция "О проекте" */
+#about {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #cecece;
 }
 
-.popup-content h3 {
-    font-size: 28px; /* Увеличенный заголовок модального окна */
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
 }
 
-.popup-content p {
-    font-size: 20px; /* Увеличенный текст модального окна */
+#about p {
+    font-size: 1.2rem;
+    max-width: 900px;
+    margin: 0 auto 30px;
+    text-align: justify;
+    color: #444;
+    line-height: 1.8;
 }
 
-.close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 24px;
-    cursor: pointer;
+#about p:last-child {
+    margin-bottom: 0;
 }
-/* Основные стили */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    font-size: 18px;
+
+.about-highlight {
+    font-weight: bold;
+    color: #283e51;
 }
-/* Раздел "Авторы проекта" */
+
+/* Секция "Исторические факты" */
+#historical-facts {
+    background-color: #cecece;
+    padding: 80px 20px;
+}
+
+#historical-facts h2 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#historical-facts div {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.8;
+}
+
+/* Секция "Авторы проекта" */
 #authors {
     padding: 60px 20px;
-    background-color: #fafafa;
+    background-color: #cecece;
     text-align: center;
 }
 
 #authors h2 {
-    font-size: 36px;
-    color: #6d5b4f;
-    margin-bottom: 40px;
-    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
 }
 
-/* Контейнер для карточек авторов */
 .authors-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
-/* Карточки авторов */
 .author-card {
     background-color: white;
     width: 300px;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .author-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-}
-
-.author-card img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    object-fit: cover;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .author-card h3 {
-    font-size: 24px;
-    color: #6d5b4f;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-.author-card p {
-    font-size: 18px;
-    color: #555;
-}
-
-/* Адаптивные стили для карточек авторов */
-@media (max-width: 1024px) {
-    .authors-container {
-        gap: 20px;
-    }
-
-    .author-card {
-        width: 45%;
-    }
-}
-
-@media (max-width: 768px) {
-    .authors-container {
-        gap: 15px;
-        flex-direction: column;
-    }
-
-    .author-card {
-        width: 100%;
-    }
-}
-
-/* Главная секция */
-header {
-    text-align: center;
-    padding: 60px;
-    background: #8c7b75;
-    color: white;
-}
-
-header .header-content h1 {
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-header .header-content p {
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-.header-content .button {
-    padding: 15px 30px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    transition: background-color 0.3s;
-}
-
-.header-content .button:hover {
-    background-color: #555;
-}
-
-/* Раздел "О проекте" */
-#intro {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 20px;
-    background-color: #fafafa;
-    margin-bottom: 40px;
-}
-
-#intro .intro-text {
-    text-align: center;
-    font-size: 20px;
-    line-height: 1.6;
-}
-
-.project-description {
-    font-size: 18px;
-    margin-top: 10px;
-    color: #555;
-    text-align: justify;
-}
-
-
-.intro-img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Раздел с историческими фактами */
-#history {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#history h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
-    color: #8c7b75;
-}
-
-.fact-cards {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.fact-card {
-    background-color: white;
-    width: 250px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.fact-card h3 {
-    font-size: 24px;
-    margin-top: 0;
-}
-
-.fact-card p {
-    font-size: 18px;
-}
-
-/* Подвал сайта */
+/* Подвал */
 footer {
+    background-color: #283e51;
+    color: white;
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: white;
 }
-/* Анимация для переходов */
-body {
-    transition: opacity 0.3s ease-in-out;
-}
-c
 
-.popup {
+footer p {
+    margin: 0;
+}
+
+/* Меню */
+:root {
+    --primColor: #dcdcdc;
+    --secoColor: #555555;
+    --cornerRad: 4px;
+}
+
+details {
+    margin: 40px;
+    position: fixed;
+    position: absolute;
+    top: 300px;
+    left: 270px;
+}
+
+summary {
+    writing-mode: vertical-lr;
+  text-align: center;
+  padding: 12px 10px;
+  width: 23px;
+  height: 17px;
+  background-color: var(--primColor);
+  border: 2px solid var(--secoColor);
+  border-radius: var(--cornerRad);
+  color: var(--secoColor);
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  transition: transform 200ms ease-in-out 0s;
+}
+
+summary:hover {
+    transform: scale(1.1);
+}
+
+summary::marker {
+    font-size: 0;
+}
+summary::after {
+    content: "III";
+    letter-spacing: -1px;
+  }
+  summary:hover {
+    transform: scale(1.1);
+  }
+  summary::marker {
+    font-size: 0;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  details[open] .menu {
+    animation-name: menuAnim;
+  }
+  details[open] summary::before {
+    content: "X";
+  }
+  details[open] summary::after {
+    content: "";
+  }
+  .menu {
+    height: 0;
+    width: fit-content;
+    border-radius: var(--cornerRad);
+    background-color: var(--primColor);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    animation: closeMenu 300ms ease-in-out forwards;
+  }
+  .menu a {
+    padding: 12px 24px;
+    margin: 0 16px;
+    color: var(--secoColor);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    text-align: center;
+    transition: filter 200ms linear 0s;
+  }
+  .menu a:nth-of-type(1) {
+    padding-top: 24px;
+  }
+  .menu a:nth-last-of-type(1) {
+    border-bottom: none;
+  }
+  .menu a:hover {
+    filter: brightness(200%);
+  }
+  details[open]::before {
+    animation: fadeMe 300ms linear forwards;
+  }
+
+
+@keyframes menuAnim {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 312px;
+  }
+}
+@keyframes fadeMe {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.popup[style*="block"] {
-    opacity: 1;
+  }
 }
