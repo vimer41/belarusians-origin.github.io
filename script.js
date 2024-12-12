@@ -12,6 +12,35 @@ function togglePopup(hypothesis) {
         }, 10); // Небольшая задержка для плавного появления
     }
 }
+document.querySelectorAll('.menu a').forEach(anchor => {
+    anchor.addEventListener('click', function () {
+        const details = this.closest('details');
+        if (details) {
+            details.removeAttribute('open');
+        }
+    });
+});
+
+document.querySelector('a[href="#about"]').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector('#about').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+document.querySelector('a[href="#historical-facts"]').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector('#historical-facts').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+document.querySelector('a[href="#authors"]').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector('#authors').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
 
 // Убедитесь, что элементы начально скрыты
 document.addEventListener('DOMContentLoaded', () => {
