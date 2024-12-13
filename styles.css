@@ -85,6 +85,7 @@ header .button:hover {
 .about-highlight {
     font-weight: bold;
     color: #283e51;
+    font-family: bankgothic lt bt;
 }
 
 /* Секция "Исторические факты" */
@@ -204,12 +205,12 @@ details {
     margin: 40px;
     position: fixed;
     position: absolute;
-    top: 300px;
+    top: 400px;
     left: 270px;
 }
 
 summary {
-    writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
   text-align: center;
   padding: 12px 10px;
   width: 23px;
