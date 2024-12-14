@@ -112,44 +112,68 @@
         }
 
         /* Модальное окно */
+        /* Модальное окно */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        max-width: 80%; /* Уменьшаем максимальную ширину */
+        text-align: center;
+        overflow-y: auto; /* Чтобы содержимое не вылезало за пределы */
+        max-height: 80vh; /* Ограничиваем высоту окна */
+    }
+
+    .modal h3 {
+        margin-top: 0;
+        font-size: 2rem; /* Подстраиваем размер заголовка */
+    }
+
+    .modal p {
+        margin: 20px 0;
+        font-size: 1.2rem; /* Уменьшаем размер шрифта для мобильных */
+    }
+
+    .modal button {
+        padding: 10px 20px;
+        background-color: #4b79a1;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .modal button:hover {
+        background-color: #283e51;
+    }
+
+    /* Медиа-запрос для мобильных устройств */
+    @media (max-width: 768px) {
         .modal {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: white;
-            padding: 30px;
-            border-radius: 100px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-            max-width: 5000px;
-            text-align: center;
+            width: 90%; /* Уменьшаем ширину модального окна на мобильных */
+            padding: 20px; /* Уменьшаем отступы для мобильных */
         }
 
         .modal h3 {
-            margin-top: 0;
+            font-size: 1.5rem; /* Уменьшаем размер заголовка для мобильных */
         }
 
         .modal p {
-            margin: 20px 0;
+            font-size: 1rem; /* Уменьшаем размер текста для мобильных */
         }
 
         .modal button {
-            padding: 10px 20px;
-            background-color: #4b79a1;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s;
+            font-size: 0.9rem; /* Уменьшаем размер шрифта на кнопке для мобильных */
         }
-
-        .modal button:hover {
-            background-color: #283e51;
-        }
-
+    }
         .overlay {
             display: none;
             position: fixed;
